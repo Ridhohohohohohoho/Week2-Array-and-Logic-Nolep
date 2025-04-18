@@ -1,6 +1,6 @@
 // ## Soal 3
-// ```js
-function hitungJumlahKata(kalimat) {
+ // ```js
+ function hitungJumlahKata(kalimat) {
     var kata = kalimat.split(' ');
     return kata.length;      
 }

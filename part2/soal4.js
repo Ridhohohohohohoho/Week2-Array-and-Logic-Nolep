@@ -1,22 +1,22 @@
 // ## Soal 4
-// ```js
-function pasanganTerbesar(num) {
-        var angka = String(num)
-        var terbesar = 0
-      
-        for (var i = 0; i < angka.length - 1; i++) {
-          var digitPertama = angka[i]
-          var digitKedua = angka[i + 1]
-      
-          var pasangan = Number(digitPertama + digitKedua)
-      
-          if (pasangan > terbesar) {
-            terbesar = pasangan
-          }
-        }
-      
-        return terbesar
+ // ```js
+ function pasanganTerbesar(num) {
+    var angka = String(num)
+    var terbesar = 0
+  
+    for (var i = 0; i < angka.length - 1; i++) {
+      var digitPertama = angka[i]
+      var digitKedua = angka[i + 1]
+  
+      var pasangan = Number(digitPertama + digitKedua)
+  
+      if (pasangan > terbesar) {
+        terbesar = pasangan
       }
+    }
+  
+    return terbesar
+  }
 
 
 // TEST CASES

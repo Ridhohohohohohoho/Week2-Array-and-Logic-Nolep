@@ -1,14 +1,14 @@
 // ## Soal 1
-// ```js
-function cariMean(arr) {
-        var total = 0
-      
-        for (var i = 0; i < arr.length; i++) {
-          total = total + arr[i]
-        }
-      
-        var mean = total / arr.length
-        return Math.round(mean)      
+ // ```js
+ function cariMean(arr) {
+    var total = 0
+  
+    for (var i = 0; i < arr.length; i++) {
+      total = total + arr[i]
+    }
+  
+    var mean = total / arr.length
+    return Math.round(mean)      
 }
 
 // TEST CASES

@@ -1,16 +1,16 @@
 // ## Soal 3
-// ```js
-//tentukan apakah ini deret aritmatika atau bukan
-function tentukanDeretAritmatika(arr) {
-        var selisih = arr[1] - arr[0]
-      
-        for (var i = 1; i < arr.length - 1; i++) {
-          var cekSelisih = arr[i + 1] - arr[i]
-          if (cekSelisih !== selisih) {
-            return false
-        }
-    }   
-        return true
+ // ```js
+ //tentukan apakah ini deret aritmatika atau bukan
+ function tentukanDeretAritmatika(arr) {
+    var selisih = arr[1] - arr[0]
+  
+    for (var i = 1; i < arr.length - 1; i++) {
+      var cekSelisih = arr[i + 1] - arr[i]
+      if (cekSelisih !== selisih) {
+        return false
+    }
+}   
+    return true
 }
 
 // TEST CASES

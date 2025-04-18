@@ -1,22 +1,22 @@
 // ## Soal 2
-// ```js
-// /*
-// Diberikan sebuah function perkalianUnik(arr) yang menerima satu parameter berupa array yang berisikan angka. Function akan me-return array baru yang mengandung angka yang setiap nilainya merupakan hasil kali angka lain yang bukan angka itu sendiri. Contoh, jika arr adalah [1, 2, 3, 4, 5], maka function akan mereturn [120, 60, 40, 30, 24], karena 120 adalah 2 * 3 * 4 * 5, 60 adalah 1 * 3 * 4 * 5, 40 adalah 1 * 2 * 4 * 5, dan seterusnya.
-// */
-function perkalianUnik(arr) {
-        var hasil = []
-      
-        for (var i = 0; i < arr.length; i++) {
-          var total = 1
-          for (var j = 0; j < arr.length; j++) {
-            if (i !== j) {
-              total = total * arr[j]
-            }
-          }
-          hasil.push(total)
+ // ```js
+ // /*
+ // Diberikan sebuah function perkalianUnik(arr) yang menerima satu parameter berupa array yang berisikan angka. Function akan me-return array baru yang mengandung angka yang setiap nilainya merupakan hasil kali angka lain yang bukan angka itu sendiri. Contoh, jika arr adalah [1, 2, 3, 4, 5], maka function akan mereturn [120, 60, 40, 30, 24], karena 120 adalah 2 * 3 * 4 * 5, 60 adalah 1 * 3 * 4 * 5, 40 adalah 1 * 2 * 4 * 5, dan seterusnya.
+ // */
+ function perkalianUnik(arr) {
+    var hasil = []
+  
+    for (var i = 0; i < arr.length; i++) {
+      var total = 1
+      for (var j = 0; j < arr.length; j++) {
+        if (i !== j) {
+          total = total * arr[j]
         }
-      
-        return hasil
+      }
+      hasil.push(total)
+    }
+  
+    return hasil
 }
 
 // TEST CASES

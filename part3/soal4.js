@@ -1,16 +1,16 @@
 // ## Soal 4
-// ```js
-function tentukanDeretGeometri(arr) {
-        var rasio = arr[1] / arr[0]
-      
-        for (var i = 1; i < arr.length - 1; i++) {
-          var cekRasio = arr[i + 1] / arr[i];
-          if (cekRasio !== rasio) {
-            return false
-          }
-        }
-      
-        return true
+ // ```js
+ function tentukanDeretGeometri(arr) {
+    var rasio = arr[1] / arr[0]
+  
+    for (var i = 1; i < arr.length - 1; i++) {
+      var cekRasio = arr[i + 1] / arr[i];
+      if (cekRasio !== rasio) {
+        return false
+      }
+    }
+  
+    return true
 }
 
 // TEST CASES
